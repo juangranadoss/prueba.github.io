@@ -1,0 +1,37 @@
+{
+  "name": "ferre",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "seed": "node prisma/seed.js",
+    "migrate:dev": "prisma migrate deploy && pnpm run seed",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@prisma/client": "^5.19.1",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.13",
+    "formidable": "^3.5.1",
+    "multer": "1.4.5-lts.1",
+    "next": "14.2.8",
+    "next-auth": "^4.24.7",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.8.2",
+    "prisma": "^5.19.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

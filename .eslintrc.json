@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true // Añadido para soporte de Node.js
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended", // Añadido para soporte de Next.js
+    "plugin:prettier/recommended",
+    "next/core-web-vitals"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": ["error", 140],
+    "quotes": [2, "double", { "avoidEscape": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    // Otras reglas específicas para Next.js, si es necesario
+    "@next/next/no-img-element": "off" // Puedes habilitar esta regla si deseas prevenir el uso de <img> en favor del componente <Image> de Next.js
+  }
+}
